@@ -1,6 +1,70 @@
-# Git & GitHub Quick Guide
+# AQL Project – Smart Rice Cooker Software
 
-Repo: https://github.com/Abdelhadi-24/AQL_Project.git
+Embedded software for a smart rice cooker, developed by the **Road Runner** team for the client **FFE (Food For Everyone)**.
+The project follows the **ISO/CEI TR 29110-5-1-2** guide (Basic profile for Very Small Entities), which has two processes:
+**PM** (Project Management) and **SI** (Software Implementation).
+
+
+## Team
+
+| Role | Member |
+|---|---|
+| Gestionnaire de projet (PM) | Zidane Anaïs Melissa |
+| Chef technique (TL) | Kaddour Abdelhadi Said |
+| Analyste (AN) | Meberbeche Sarah |
+| Concepteur (DES) | Bouzourine Achraf Rayan |
+| Programmeur (PR) | Issad Abdelmalek |
+| Équipe de travail (WT) | Reguieg Selma |
+
+## Repository structure
+
+```
+AQL_Project/
+├── README.md                          # project overview, team, how to navigate the repo, how to use GitHub
+│
+├── Client/
+│   └── enonce-des-travaux/            # Énoncé des travaux v2.0 + cooking curves (input from FFE)
+│
+├── Gestion-de-projet/              # PM process (Tableau 10 of the guide)
+│   ├── plan-de-projet/				# includes Directives de livraison + Stratégie de contrôle des versions
+│   ├── specification-des-exigences/                
+│   ├── demandes-de-changement/
+│   ├── enregistrements-de-reunion/    # team and client meetings
+│   ├── registre-des-corrections/
+│   ├── enregistrements-d-avancement/  # weekly progress reports
+│   ├── resultats-de-verification/     # verification of the Plan de projet
+│   └── enregistrement-de-reception/   # signed acceptance record (closure)
+│
+├── Mise-en-oeuvre/                 # SI process: documents (Tableau 21 of the guide)
+│   ├── specification-des-exigences/
+│   ├── conception-du-logiciel/
+│   ├── enregistrement-de-tracabilite/
+│   ├── cas-et-procedures-de-test/     # test cases as documents
+│   ├── rapport-de-test/
+│   ├── documentation-utilisateur/
+│   ├── guide-d-operation/
+│   ├── documentation-maintenance/
+│   ├── resultats-de-verification/     # SRS, design, test cases, docs reviews
+│   └── resultats-de-validation/       # client validation of the SRS
+│
+├── Src/                               # Composants logiciels
+└── Tests/
+    ├── unitaires/
+    └── integration/                   # executable tests (the Logiciel's tests)
+```
+
+### Where do I put my file?
+
+- A **management** document (plan, meeting notes, progress report, change request...) goes in `Gestion-de-projet/`.
+- A **software** document (requirements, design, test cases, manuals...) goes in `Mise-en-oeuvre/`.
+- **Code** goes in `Src/`, **executable tests** in `Tests/`.
+- Anything received from the client goes in `Client/`.
+
+> This structure is a first version. It will be updated as the project moves forward.
+
+---
+
+# Git & GitHub Quick Guide
 
 ## Setup (once)
 
